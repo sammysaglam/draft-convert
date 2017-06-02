@@ -1063,12 +1063,12 @@ return /******/ (function(modules) { // webpackBootstrap
 			inBlock = listItemBlockType;
 			newBlock = true;
 			nextBlockType = lastList === 'ul' ? 'unordered-list-item' : 'ordered-list-item';
-		} else if (lastList && inBlock === 'code' && nodeName === 'pre') {
+		} else if (lastList && inBlock === 'code' && nodeName === 'li') {
 			var _listItemBlockType = getBlockTypeForTag(nodeName, lastList);
 			chunk = getBlockDividerChunk(_listItemBlockType, depth);
 			inBlock = _listItemBlockType;
 			newBlock = true;
-			nextBlockType = 'code-block';
+			nextBlockType = lastList === 'ul' ? 'unordered-list-item' : 'ordered-list-item';
 		} else if (inBlock && inBlock !== 'atomic' && blockType === 'atomic') {
 			inBlock = blockType;
 			newBlock = true;
