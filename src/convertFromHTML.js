@@ -384,7 +384,7 @@ function genFragment(node ,
 		newBlock                = true;
 		nextBlockType           = lastList === 'ul' ? 'unordered-list-item' : 'ordered-list-item';
 
-	} else if ( lastList && (inBlock === 'code') && nodeName === 'pre' ) {
+	} else if ( lastList && (inBlock === 'code') && nodeName === 'li' ) {
 		const listItemBlockType = getBlockTypeForTag(nodeName , lastList);
 		chunk                   = getBlockDividerChunk(
 			listItemBlockType ,
@@ -392,7 +392,7 @@ function genFragment(node ,
 		);
 		inBlock                 = listItemBlockType;
 		newBlock                = true;
-		nextBlockType           = 'code-block';
+		nextBlockType           = lastList === 'ul' ? 'unordered-list-item' : 'ordered-list-item';
 
 	} else if ( inBlock && inBlock !== 'atomic' && blockType === 'atomic' ) {
 		inBlock  = blockType;
