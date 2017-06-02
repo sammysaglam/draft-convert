@@ -1418,7 +1418,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+		value: true
 	});
 
 	var _react = __webpack_require__(1);
@@ -1428,25 +1428,29 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = {
-	  'unstyled': _react2.default.createElement('p', null),
-	  'paragraph': _react2.default.createElement('p', null),
-	  'header-one': _react2.default.createElement('h1', null),
-	  'header-two': _react2.default.createElement('h2', null),
-	  'header-three': _react2.default.createElement('h3', null),
-	  'header-four': _react2.default.createElement('h4', null),
-	  'header-five': _react2.default.createElement('h5', null),
-	  'header-six': _react2.default.createElement('h6', null),
-	  'blockquote': _react2.default.createElement('blockquote', null),
-	  'unordered-list-item': {
-	    element: _react2.default.createElement('li', null),
-	    nest: _react2.default.createElement('ul', null)
-	  },
-	  'ordered-list-item': {
-	    element: _react2.default.createElement('li', null),
-	    nest: _react2.default.createElement('ol', null)
-	  },
-	  'media': _react2.default.createElement('figure', null)
-	};
+		'unstyled': _react2.default.createElement('p', null),
+		'paragraph': _react2.default.createElement('p', null),
+		'header-one': _react2.default.createElement('h1', null),
+		'header-two': _react2.default.createElement('h2', null),
+		'header-three': _react2.default.createElement('h3', null),
+		'header-four': _react2.default.createElement('h4', null),
+		'header-five': _react2.default.createElement('h5', null),
+		'header-six': _react2.default.createElement('h6', null),
+		'blockquote': _react2.default.createElement('blockquote', null),
+		'unordered-list-item': {
+			element: _react2.default.createElement('li', null),
+			nest: _react2.default.createElement('ul', null)
+		},
+		'ordered-list-item': {
+			element: _react2.default.createElement('li', null),
+			nest: _react2.default.createElement('ol', null)
+		},
+		'code-block': {
+			element: _react2.default.createElement('code', null),
+			nest: _react2.default.createElement('pre', null)
+		},
+		'media': _react2.default.createElement('figure', null)
+	}; /* eslint-disable */
 
 /***/ },
 /* 16 */
